@@ -21,12 +21,12 @@ I have a great desire and aspiration. I will be grateful for the chance, because
 #### English
 * A2 level
 
-##EDUCATION
+## EDUCATION
 **OLES HONCHAR DNIPRO NATIONAL UNIVERSITY** (2007-2012)
 Mathenics and Mathematics faculty
 Speciality Mathematics 
 
-##Code examples
+## Code examples
 ```javascript
 function drawTriangle(a,b) { var k='';
   if (a.length != 1 || isFinite(b)==false) {  console.log('Вы ввели некорректные данные'); }
