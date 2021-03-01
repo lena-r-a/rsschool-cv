@@ -17,6 +17,7 @@ I have a great desire and aspiration. I will be grateful for the chance, because
 * JQuery
 * NPM
 * Git/GitHub
+* Bootstrap
 
 #### English
 * A2 level
