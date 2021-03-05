@@ -9,16 +9,23 @@ body {
     header {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        padding: 1.5%;
+        align-items: center;
+        font-size: 1.5em;
+        background-color: rgb(117, 57, 13);
+        color: white;
     }
     .photo img {
-        width: 120px;
+        width: 150px;
         height: auto;
         margin-right: 20px;
+        padding: 2%;
     }
 
-    header h1 {
-        margin-top: 0px;
-    }
+    .position {
+        margin-left: 3%;
+            }
 
     footer img {
             width: 40px;
@@ -37,5 +44,31 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+                background-color: rgb(117, 57, 13);
 
     }
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+aside {
+    padding: 0 1.5%;
+    width: 30%;
+    background-color: rgb(180, 105, 105);
+}
+main {
+    margin: 0 1.5%;
+    width: 63%;
+}
+
+pre {
+    margin-bottom: 20px;
+}
+
+h5 {
+    margin-bottom: 0px;
+}
+.gh {
+    color: white;
+}
