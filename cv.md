@@ -41,3 +41,6 @@ function explode(s) {
 
 - Oles Honchar Dnipro National University (2007-2012)
 --Mechanics and Mathematics
+## English
+---
+Level - B1
