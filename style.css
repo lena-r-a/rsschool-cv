@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+    background-color: azure;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.imageConrainer {
+    max-width: 20%;
+    max-height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.photo {
+    width: 120%;
+    left: 0;
+    top: 0;
+}
+.name {
+    font-size: 4em;
+}
+.hContainer {
+    height: 150px;
+    padding-top: 1em;
+}
+.position {
+    font-size: 2em;
+}
+.logo {
+    width: 50px;
+}
