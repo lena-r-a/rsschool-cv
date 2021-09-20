@@ -9,6 +9,7 @@ html {
 }
 
 .container {
+    height: 100hw;
     margin: 50px auto;
     width: 55rem;
     -webkit-box-shadow: 0px 4px 14px 20px rgba(86, 10, 10, 0.2);
@@ -29,7 +30,6 @@ html {
 }
  .displaynone {
      display: none;
-     
  }
 .header_container {
     display: flex;
@@ -85,12 +85,28 @@ main {
 .name {
     font-size: 4em;
 }
+.task {
+    height: 0;
+    overflow: hidden;
+}
 .hContainer {
     height: 150px;
     padding-top: 1em;
 }
 .position {
     font-size: 2em;
+}
+.examples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.examples img {
+    width: 100%
+}
+.ex {
+    width: 40%;
 }
 .logo {
     width: 50px;
@@ -193,6 +209,8 @@ button {
 }
 .burger {
     display: none;
+    height:0px;
+    overflow: hidden;
 }
 
 .button:hover {
@@ -237,7 +255,7 @@ button {
             padding-left: 10px;
         }
         .name{font-size: 3em;} 
-        pre {white-space: normal;}
+        /* pre {white-space: normal;} */
         .contacts_ul {
             font-size: 16px;
         }
