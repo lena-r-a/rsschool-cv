@@ -28,7 +28,7 @@ html {
     position: relative;
 }
  .displaynone {
-     opacity: 0;
+     display: none;
      
  }
 .header_container {
