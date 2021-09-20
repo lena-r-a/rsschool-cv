@@ -5,37 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>CV</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="imageConrainer">
-          <img src="/img/20210531005514_IMG_1475.JPG" alt="photo" class="photo" />
+        <nav class="navigation displaynone">
+          <ul>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#english">English</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#code_examples">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="header_container">
+          <div class="imageConrainer">
+            <img src="/img/20210531005514_IMG_1475.JPG" alt="photo" class="photo" />
+          </div>
+          <div class="hContainer">
+            <h1 class="name">Ryzhankova Alena</h1>
+            <p class="position">Front-end/Javascript developer</p>
+          </div>
         </div>
-        <div class="hContainer">
-          <h1 class="name">Ryzhankova Alena</h1>
-          <p class="position">Front-end/Javascript developer</p>
-        </div>
+        
+        <button class="button nav">Nav</button>
+        <button class="button burger "></button>
       </header>
 
       <main>
           <section class="left">
-            <div class="mainPoints">
-                <div class="contacts">
-                  <h2 class="mainPoints__header">Contacts</h2>
+            <div class="mainpoints">
+                <div class="contacts point" id="contacts">
+                  <h2 class="mainpoints__header">Contacts</h2>
                   <ul class="list contacts_ul">
                     <li class="item"><b>Email:</b>rizhankova.elena@gmail.com</li>
                     <li class="item"><b>Phone:</b> +375447647315</li>
                     <li class="item">
                       <b>LinkedIn:</b>
-                      https://www.linkedin.com/in/alena-ryzhankova-b9a8ab1bb/
+                     <a href="https://www.linkedin.com/in/alena-ryzhankova-b9a8ab1bb/"> https://www.linkedin.com/in/alena-ryzhankova-b9a8ab1bb/</a>
                     </li>
-                    <li class="item"><b>Github:</b> https://github.com/lena-r-a</li>
+                    <li class="item"><b>Github:</b> <a href="https://github.com/lena-r-a">https://github.com/lena-r-a</a></li>
                   </ul>
                 </div>
-                <div class="skills">
-                  <h2 class="mainPoints__header">Skills</h2>
+                <div class="skills point" id="skills">
+                  <h2 class="mainpoints__header">Skills</h2>
                   <ul class="list skills_ul">
                     <li class="item">HTML</li>
                     <li class="item">CSS/SASS</li>
@@ -47,8 +66,8 @@
                     <li class="item">Git</li>
                   </ul>
                 </div>
-                <div class="english">
-                  <h2 class="mainPoints__header">English</h2>
+                <div class="english point" id="english">
+                  <h2 class="mainpoints__header">English</h2>
                   <h5>Level<mark>B1</mark></h5>
                 </div>
               </div>
@@ -56,7 +75,7 @@
       
       
         <section class="information">
-          <div class="about_me">
+          <div class="about_me info" id="about">
             <h2 class="information_header">About Me</h2>
             <p class="information_text">
               I am a on a start of my way of front-end developer. I lerned HTML,
@@ -67,7 +86,7 @@
               developer and to be in progress of my development skills.
             </p>
           </div>
-          <div class="experience">
+          <div class="experience info" id="experience">
             <h2 class="information_header">Experience</h2>
             <ul class="list information_ul">
               <li class="item">
@@ -80,19 +99,39 @@
               <li class="item">SkillUp courses (HTML,CSS,JS,React)</li>
             </ul>
           </div>
-          <div class="education">
+          <div class="education info" id="education">
             <h3 class="information_header">Education</h3>
 
-            <h4 class="item">
+            <h4 class="study">
               Oles Honchar Dnipro National University (2007-2012)
             </h4>
             <ul class="list">
               <li class="item">Mechanics and Mathematics</li>
             </ul>
           </div>
-          <div class="examples">
+          <div class="examples info" id="code_examples">
             <h3 class="information_header">Code examples</h3>
-            <p><mark>TODOLIST: </mark> https://github.com/lena-r-a/hw9</p> 
+            <h2 class="todolist_p">TODOLIST: <a href="https://codesandbox.io/embed/todolist-5xkr7?file=/src/App.js&codemirror=1" target="blank"><img class="todolist" src="/img/proj.jpeg" alt="" ></a></h2> 
+            <p>Simple Tdolist on React</p>
+              <p><b>Used technologies:</b><span>React</span></p>
+              
+            <h2 class="todolist_p">LANDING: <a href="https://lena-r-a.github.io/hw3/app.html" target="blank"><img class="todolist" src="/img/land.jpg" alt="" ></a> </h2> 
+            <p>Simple landing page</p>
+              <p><b>Used technologies:</b><span>HTML,CSS</span></p>
+            
+            <pre><code class="language-javascript">
+              function stringify(list) {
+                let current = list;
+              let str='';
+                while (current) {
+                  
+                  str=str+current.data+' -> '
+                  console.log(str) ;
+                  current=current.next;
+                }
+                return str+"null"
+              }
+            </code></pre>
 
           </div>
         </section>
@@ -104,5 +143,38 @@
           
       </footer>
     </div>
+    <div class="task displaynone">
+        WHAT DONE: Ожидаемый балл 150
+        
+        вёрстка валидная +10
+
+        вёрстка семантическая +20
+        В коде страницы присутствуют семантические теги HTML5: footer, header, main, nav, section, используются заголовки h1-h5. Заголовок h1 только один.
+        
+        для оформления СV используются css-стили +10
+
+        контент размещается в блоке, который горизонтально центрируется на странице +10
+
+        вёрстка адаптивная:  +10
+
+      есть адаптивное бургер-меню,реализована плавная прокрутка +10
+
+      на странице СV присутствует изображение - фото  автора CV, пропорции изображения не искажены, у изображения есть атрибут alt  +10
+
+      контакты для связи и перечень навыков оформлены в виде списка ul > li +10
+
+      CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
+
+      CV содержит пример вашего кода с подсветкой кода.  +10
+
+      CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10
+
+      CV выполнено на английском языке +10
+
+      выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10
+
+    дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
