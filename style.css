@@ -17,6 +17,11 @@ html {
     box-shadow: 0px 4px 14px 20px rgba(86, 10, 10, 0.2);
 }
 
+.task {
+    height: 0;
+    overflow: hidden;
+}
+
 .header {
     padding-top: 30px;
     
@@ -289,7 +294,7 @@ button {
         .burger {
             width: 30px;
             height: 30px;
-            background-image: url("/img//burger_line_list_menu_nav_navigation_option_icon_123231.svg");
+            background-image: url("img/burger_line_list_menu_nav_navigation_option_icon_123231.svg");
             display: block;
         }
         .nav {
