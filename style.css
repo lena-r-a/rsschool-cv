@@ -271,7 +271,7 @@ button {
         .burger {
             width: 30px;
             height: 30px;
-            background-image: url("/img//burger_line_list_menu_nav_navigation_option_icon_123231.svg");
+            background-image: url("img/burger_line_list_menu_nav_navigation_option_icon_123231.svg");
             display: block;
         }
         .nav {
